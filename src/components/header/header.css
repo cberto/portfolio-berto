@@ -3,6 +3,7 @@ header {
     padding-top: 7rem;
     overflow: hidden;
 }
+
 .header__container {
     text-align: center;
     height: 100%;
@@ -15,6 +16,7 @@ header {
     gap: 1.2rem;
     justify-content: center;
 }
+
 .header__socials {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,8 @@ header {
     left: 35px;
     bottom: 5rem;
 }
-.header__socials::after{
+
+.header__socials::after {
     content: "";
     width: 1px;
     height: 2rem;
@@ -32,7 +35,7 @@ header {
 }
 
 .me {
-    background: linear-gradient(var(--color-primary),transparent);
+    background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
@@ -43,7 +46,8 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 
 }
-.scroll__down{
+
+.scroll__down {
     position: absolute;
     right: 0.7rem;
     bottom: 9rem;
@@ -51,7 +55,8 @@ header {
     font-weight: 300;
     font-size: 0.9rem;
 }
-@media screen and (max-width: 1024px) {
+
+/* @media screen and (max-width: 1024px) {
     header{
         height: 68vh;
     }
@@ -64,5 +69,46 @@ header {
     .header__socials,
     .scroll__down{
         display: none;
+    }
+} */
+
+.dev {
+
+    /* animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite; */
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+    border-right: .10em solid rgb(22, 1, 46);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .09em;
+
+
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(241, 26, 26);
     }
 }

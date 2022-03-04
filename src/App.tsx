@@ -8,11 +8,13 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Services from './components/services/Services'
 import Education from './components/education/Education'
+import HeaderTest from './components/header/HeaderTest'
 
 export const App = () => {
   return (
     <>
-      <Header />
+
+      <HeaderTest />
       <Nav />
       <About />
       <Education />
